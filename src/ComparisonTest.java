@@ -21,7 +21,7 @@ public class ComparisonTest {
             long startTime = System.nanoTime();
             trie.search(searchKeys[i]);
             long endTime = System.nanoTime();
-            System.out.println("searching time for string comparison for size " + (dictSize - 1) + " : " + (endTime - startTime));
+            System.out.println("searching time for Trie for size " + (dictSize - 1) + " : " + (endTime - startTime));
         }
     }
 
@@ -40,7 +40,7 @@ public class ComparisonTest {
             long startTime = System.nanoTime();
             trie.justStringComparison(dict, searchKeys[i]);
             long endTime = System.nanoTime();
-            System.out.println("searching time for Trie for size " + (dictSize - 1) + " : " + (endTime - startTime));
+            System.out.println("searching time for string comparison for size " + (dictSize - 1) + " : " + (endTime - startTime));
         }
     }
 }
