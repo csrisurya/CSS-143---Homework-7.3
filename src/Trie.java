@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Trie {
@@ -57,24 +56,6 @@ public class Trie {
             }
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        List<String> dict = new ArrayList<>();
-        dict.add("hello");
-        dict.add("high");
-        dict.add("seattle");
-        dict.add("seatac");
-        dict.add("see");
-        dict.add("hollow");
-        dict.add("how");
-        Trie trie = new Trie(dict);
-
-        List<String> actual =trie.search("xyz");
-        System.out.println(actual.toString());
-        Collections.sort(actual);
-        System.out.println(actual.toString());
-
     }
 
 }
