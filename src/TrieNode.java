@@ -3,10 +3,12 @@ import java.util.HashMap;
 
 public class TrieNode {
     HashMap<Character, TrieNode> children;
-    boolean endOfWord;
+    boolean IsWord;
+    String prefix;
 
-    public TrieNode(){
+    public TrieNode(String prefix){
         children = new HashMap<>();
-        endOfWord = false;
+        IsWord = false;
+        this.prefix = prefix;
     }
 }
